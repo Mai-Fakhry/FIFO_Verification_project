@@ -1,0 +1,226 @@
+Coverage Report by file with details
+
+=================================================================================
+=== File: FIFO.sv
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        32        32         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for file FIFO.sv --
+
+------------------------------------IF Branch------------------------------------
+    30                                       133     Count coming in to IF
+    30              1                          6     
+    35              1                        127     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    40                                       127     Count coming in to IF
+    40              1                         48     
+    45              1                         79     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    52                                       127     Count coming in to IF
+    52              1                         35     
+    54              1                         92     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    60                                       133     Count coming in to IF
+    60              1                          6     
+    65              1                         39     
+                                              88     All False Count
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    73                                       109     Count coming in to IF
+    73              1                          6     
+    77              1                        103     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    78                                       103     Count coming in to CASE
+    79              1                         50     
+    80              1                         21     
+    81              1                         17     
+    89              1                         15     
+Branch totals: 4 hits of 4 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    79                                        50     Count coming in to IF
+    79              2                         35     
+                                              15     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    80                                        21     Count coming in to IF
+    80              2                         20     
+                                               1     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    82                                        17     Count coming in to IF
+    82              1                          9     
+    84              1                          1     
+    86              1                          7     
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    95                                        66     Count coming in to IF
+    95              1                         13     
+    95              2                         53     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    96                                        66     Count coming in to IF
+    96              1                          5     
+    96              2                         61     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    97                                        52     Count coming in to IF
+    97              1                          3     
+    97              2                         49     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    100                                       66     Count coming in to IF
+    100             1                         16     
+    100             2                         50     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    103                                       66     Count coming in to IF
+    103             1                          7     
+    103             2                         59     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                      14        14         0   100.00%
+
+================================Condition Details================================
+
+Condition Coverage for file FIFO.sv --
+
+----------------Focused Condition View-------------------
+Line       40 Item    1  (fifo_1.wr_en && (count < 8))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       52 Item    1  (fifo_1.full && fifo_1.wr_en)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       65 Item    1  (fifo_1.rd_en && (count != 0))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       82 Item    1  (fifo_1.full ~| fifo_1.empty)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       95 Item    1  (count == 8)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       96 Item    1  (count == 0)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       97 Item    1  (fifo_1.empty && fifo_1.rd_en)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       100 Item    1  (count == (8 - 1))
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       103 Item    1  (count == 1)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      30        30         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for file FIFO.sv --
+
+    24              1                          1     
+    25              1                          1     
+    26              1                          1     
+    29              1                        133     
+    31              1                          6     
+    32              1                          6     
+    33              1                          6     
+    41              1                         48     
+    42              1                         48     
+    43              1                         48     
+    46              1                         79     
+    53              1                         35     
+    55              1                         92     
+    59              1                        133     
+    62              1                          6     
+    63              1                          6     
+    67              1                         39     
+    68              1                         39     
+    72              1                        109     
+    75              1                          6     
+    79              1                         35     
+    80              1                         20     
+    83              1                          9     
+    85              1                          1     
+    87              1                          7     
+    95              1                         66     
+    96              1                         66     
+    97              1                         53     
+    100             1                         66     
+    103             1                         66     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         20        20         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for File FIFO.sv --
+
+       Line                                   Node      1H->0L      0L->1H  "Coverage"
+--------------------------------------------------------------------------------------
+
+Total Node Count     =         10 
+Toggled Node Count   =         10 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (20 of 20 bins)
+
+=================================================================================
+=== File: pkg_2.sv
+=================================================================================
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       4         4         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for file pkg_2.sv --
+
+    7               1                          1     
+    64              1                          1     
+    68              1                        129     
+    69              1                        129     
+
+
+Total Coverage By File (code coverage only, filtered view): 100.00%
+
